@@ -1,0 +1,20 @@
+version: '3.9'
+
+services:
+  world_x:
+    platform: linux/x86_64
+    image: mysql
+    environment:
+      MYSQL_DATABASE: 'world_x'
+      MYSQL_USER: testuser
+      MYSQL_PASSWORD: testpass
+      MYSQL_ROOT_PASSWORD: testsuperpass
+    ports:
+      - "3306:3306"
+    expose:
+      - '3306'
+    volumes:
+      - mysql-volume:/var/lib/mysql
+    restart: unless-stopped
+volumes:
+  mysql-volume:

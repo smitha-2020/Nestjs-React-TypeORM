@@ -18,5 +18,7 @@
 - cd backend and  npm run start:dev
 - cd frontend and  npm start
 
-![alt text](https://github.com/smitha-2020/weatherApp/blob/main/weatherApp.png)
-![alt text](https://github.com/smitha-2020/weatherApp/blob/main/weatherforecast.png)
+![alt text](https://github.com/smitha-2020/Nestjs-React-TypeORM/blob/main/homePage.png)
+![alt text](https://github.com/smitha-2020/Nestjs-React-TypeORM/blob/main/piechart.png)
+![alt text](https://github.com/smitha-2020/Nestjs-React-TypeORM/blob/main/Barchart.png)
+![alt text](https://github.com/smitha-2020/Nestjs-React-TypeORM/blob/main/piechart.png)

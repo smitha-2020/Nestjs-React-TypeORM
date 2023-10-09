@@ -17,3 +17,6 @@
 - copy the .env file into the backend root folder
 - cd backend and  npm run start:dev
 - cd frontend and  npm start
+
+![alt text](https://github.com/smitha-2020/weatherApp/blob/main/weatherApp.png)
+![alt text](https://github.com/smitha-2020/weatherApp/blob/main/weatherforecast.png)

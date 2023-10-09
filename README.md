@@ -6,7 +6,7 @@
 - Graphs - Displays Bar,Column,Scatter and Pie Chart.
 - Create a new Author Form
 
-## Skills Used
+## Tools Used
 - Backend- Nestjs,TypeORM
 - Frontend -React, React-bootstrap, chartjs, react-hook-form
 - Database - Mysql

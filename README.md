@@ -9,7 +9,7 @@
 ## Tools Used
 - Backend- Nestjs,TypeORM
 - Frontend -React, React-bootstrap, chartjs, react-hook-form
-- Database - Mysql which is Dockerized
+- Database - Mysql running on docker container
 
 ## Steps to duplicate
 - cd root directory and docker-compose up

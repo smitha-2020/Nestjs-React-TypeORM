@@ -11,3 +11,9 @@
 - Frontend -React, React-bootstrap, chartjs
 - Database - Mysql
 - Docker
+
+## Steps to duplicate
+- cd root directory and docker-compose up
+- copy the .env file into the backend root folder
+- cd backend and  npm run start:dev
+- cd frontend and  npm start

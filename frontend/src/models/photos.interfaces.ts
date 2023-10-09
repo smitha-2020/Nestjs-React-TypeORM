@@ -37,7 +37,7 @@ export interface AggregatedDataInfo {
   copiesDownloaded: number;
 }
 
-export interface ChartProps{
-  setData:Function;
-  photoList:AggregatedDataInfo[] | PhotoInfo[];
+export interface ChartProps {
+  setData: Function;
+  photoList: AggregatedDataInfo[] | PhotoInfo[];
 }

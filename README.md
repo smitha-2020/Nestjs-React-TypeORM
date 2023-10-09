@@ -22,3 +22,7 @@
 ![alt text](https://github.com/smitha-2020/Nestjs-React-TypeORM/blob/main/piechart.png)
 ![alt text](https://github.com/smitha-2020/Nestjs-React-TypeORM/blob/main/Barchart.png)
 ![alt text](https://github.com/smitha-2020/Nestjs-React-TypeORM/blob/main/scattterChart.png)
+![alt text](https://github.com/smitha-2020/Nestjs-React-TypeORM/blob/main/ColumnGraph.png)
+![alt text](https://github.com/smitha-2020/Nestjs-React-TypeORM/blob/main/Form.png)
+
+

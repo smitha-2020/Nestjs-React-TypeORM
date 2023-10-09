@@ -8,7 +8,7 @@
 
 ## Skills Used
 - Backend- Nestjs,TypeORM
-- Frontend -React, React-bootstrap, chartjs
+- Frontend -React, React-bootstrap, chartjs, react-hook-form
 - Database - Mysql
 - Docker
 

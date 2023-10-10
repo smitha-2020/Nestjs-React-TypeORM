@@ -50,7 +50,7 @@ export class PhotosController {
     return file.filename;
   }
 
-  @Post('/fetchAndInsert')
+  @Post('/fetch-insert')
   fetchDataFromApiAndInsertIntoDB() {
     return this.photosService.fetchDataFromApiAndInsertIntoDB();
   }
@@ -60,7 +60,7 @@ export class PhotosController {
     return this.photosService.getAllPhotos(queryParams);
   }
 
-  @Get('author-photosDownloaded')
+  @Get('author-photos-downloaded')
   getAggregatedDownloadsForAuthor() {
     return this.photosService.getAggregatedDownloadsForAuthor();
   }

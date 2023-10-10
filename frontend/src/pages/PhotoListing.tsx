@@ -9,12 +9,12 @@ import {
 import { PhotoInfo, Params } from "../models/photos.interfaces";
 import { DisplayList } from "./DisplayList";
 import { PhotoPagination } from "../components/PhotoPagination";
-import {PageSize, SortOrder} from "../models/enums";
-
+import { PageSize, SortOrder } from "../models/enums";
 
 function PhotoListing() {
   const [count, setCount] = useState(0);
   const [photoList, setPhotoList]: [PhotoInfo[], Function] = useState([]);
+  const [loadedToDb, setLoadedToDb]: [false, Function] = useState(false);
 
   const [params, setParams] = useState({
     page: 1,
@@ -36,7 +36,7 @@ function PhotoListing() {
 
   const loadRecords = () => {
     loadAllRecordsToDB()
-      .then((photoList) => setPhotoList(photoList.slice(0,25)))
+      .then((loadedToDb) => setLoadedToDb(loadedToDb))
       .catch(console.error);
 
     setParams({
@@ -45,6 +45,16 @@ function PhotoListing() {
       sortOrder: SortOrder.ASC,
     });
   };
+
+  useEffect(() => {
+    getPhotosList(params)
+      .then((photoList) => setPhotoList(photoList))
+      .catch(console.error);
+
+    getCount()
+      .then((count) => setCount(count))
+      .catch(console.error);
+  }, [loadedToDb]);
 
   const pageCount = Math.ceil(count / params.pageSize);
 

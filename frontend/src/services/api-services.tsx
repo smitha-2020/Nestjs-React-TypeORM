@@ -40,11 +40,11 @@ export const getPhotosList = async (params?: Params): Promise<PhotoInfo[]> => {
 export const getAggregatedAuthorDownloads = async (): Promise<
   AggregatedDataInfo[]
 > => {
-  return apiRequest("/author-photosDownloaded");
+  return apiRequest("/author-photos-downloaded");
 };
 
 export const loadAllRecordsToDB = async (): Promise<PhotoInfo[]> => {
-  return apiRequest("/fetchAndInsert", { method: "POST" });
+  return apiRequest("/fetch-insert", { method: "POST" });
 };
 
 export const postImage = async (file: File): Promise<File> => {

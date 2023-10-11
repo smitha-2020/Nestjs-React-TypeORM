@@ -25,10 +25,11 @@ function CreatePhoto() {
     }
   };
   useEffect(() => {
-    //console.log(fileData);
-    postImage(fileData)
-      .then((fileUrl) => setFileUrl(fileUrl))
-      .catch(console.error);
+    if (!!fileData) {
+      postImage(fileData)
+        .then((fileUrl) => setFileUrl(fileUrl))
+        .catch(console.error);
+    }
   }, [fileData]);
 
   const onSubmitHandler = (data: CreatePhotoInfo) => {
